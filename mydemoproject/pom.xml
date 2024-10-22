@@ -48,5 +48,13 @@
             <version>1.7.32</version>
     </dependency>
 
+    <!-- for accesing .env file -->
+    <dependency>
+        <groupId>io.github.cdimascio</groupId>
+        <artifactId>dotenv-java</artifactId>
+        <version>3.0.0</version>
+    </dependency>
+
+
     </dependencies>
 </project>

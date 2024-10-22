@@ -40,7 +40,7 @@ import org.json.JSONObject;
  import java.awt.*;
 
 
-
+ import io.github.cdimascio.dotenv.Dotenv;
 
  class ImagePanel extends JPanel {
     private Image backgroundImage;
@@ -716,10 +716,13 @@ public static void mainui(){
     }
 
     public static String gemini(String prompt) {
+
+         // Load the .env file
+         Dotenv dotenv = Dotenv.load();
          CloseableHttpClient httpClient = HttpClients.createDefault();
 
         // Your Google API key
-        String apiKey = "AIzaSyCwIyE-xCxFunqmq65GmhS6VgKmY1Cpkfs"; // Replace with your actual API key
+        String apiKey = dotenv.get("api_key"); // Replace with your actual API key
 
         // API endpoint for Google Generative Language API
         String endpoint = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=" + apiKey;
