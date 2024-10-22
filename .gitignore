@@ -19,10 +19,10 @@ Thumbs.db
 
 # Ignore environment-specific configuration
 .env
+.resources
 
 # Ignore Firebase service account credentials
 mydemoproject/src/main/resources/aoop-project-fde23-firebase-adminsdk-pvvl2-cc88314796.json
-
 # Ignore build output
 *.class
 *.jar
