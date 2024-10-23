@@ -1,0 +1,32 @@
+# Ignore Maven target directory
+target/
+
+# Ignore IntelliJ IDEA project files
+.idea/
+*.iml
+
+# Ignore Eclipse project files
+.project
+.classpath
+.settings/
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore environment-specific configuration
+.env
+.resources
+
+# Ignore Firebase service account credentials
+mydemoproject/src/main/resources/aoop-project-fde23-firebase-adminsdk-pvvl2-cc88314796.json
+# Ignore build output
+*.class
+*.jar
+*.war
+
+# Ignore node_modules folder (if applicable)
+node_modules/
